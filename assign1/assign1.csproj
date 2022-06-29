@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\images\boy1.jpg" />
+    <None Include="wwwroot\images\girl1.jpg" />
+    <None Include="wwwroot\images\icons\mag.svg" />
+    <None Include="wwwroot\images\img1.jpg" />
+    <None Include="wwwroot\images\img2.jpg" />
+    <None Include="wwwroot\images\img3.jpg" />
+    <None Include="wwwroot\images\img4.jpg" />
+    <None Include="wwwroot\images\kids.png" />
+    <None Include="wwwroot\images\logo.png" />
+    <None Include="wwwroot\images\s1.jpg" />
+    <None Include="wwwroot\images\s2.jpg" />
+    <None Include="wwwroot\images\s3.jpg" />
+    <None Include="wwwroot\images\s4.jpg" />
+    <None Include="wwwroot\images\s5.jpg" />
+    <None Include="wwwroot\images\s6.jpg" />
+  </ItemGroup>
+
+</Project>

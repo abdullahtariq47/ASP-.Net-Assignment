@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    width: 100%;
+}
+#nav-bar{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto auto;
+    display: flex;
+    justify-content:space-around;
+}
+#nav-show-btn{
+    display: none;
+}
+#logo{
+    width: 50px;
+}
+#nav-list{
+    list-style: none;
+    display: flex;
+    font-size: 22px;
+}
+#nav-list li{
+    padding: 0px 15px 0px 15px;
+}
+#nav-list li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+#nav-list li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+#main{
+    margin-top: 5px;
+}
+#nav-list li a:hover::after{
+    width: 100%;
+}
+#nav-right{
+    display: flex;
+    font-size: 22px;
+}
+#nav-btn{
+    margin-left: 50px;
+}
+.nav-btns{
+    margin-left: 10px;
+}
+#lg-btn{
+    border: none;
+    border-right: 1px solid black;
+}
+#nav-btn a{
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+}
+#nav-search input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    font-size: 20px;
+}
+#main{
+    width: 100%;
+    height: auto;
+}
+#frstimg{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#frsttext{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    font-size: xx-large;
+    margin: auto auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#img1{
+    width: 100%;
+    height: fit-content;
+}
+#frstimg a{
+    width: 100%;
+}
+#main2{
+    margin: 1% 0 1% 0;
+}
+#scnd img{
+    width: 100%;
+    height: auto;
+}
+#pics2{
+    width: 100%;
+    margin: 2px 0 2px 0;
+    display: flex;
+    position: relative;
+}
+#pics2 div{
+    width: 50%;
+    padding: 8px;
+    height: 40vh;
+}
+#pics2 div img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+    transition: 1s;
+}
+#pics2 div img:hover, #heading{
+    transform: scale(1.03);
+}
+#fivepics{
+    margin-top: 5px;
+}
+#fcontainer{
+    width: 90%;
+    margin: auto auto;
+    height: 40vh;
+    display: flex;
+}
+#pic1{
+    position: relative;
+}
+#pic2{
+    position: relative;
+}
+.heading{
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+}
+.heading:hover{
+    border-radius: 25px;
+    transition: 1s;
+}
+#fslide{
+    display: none;
+}
+.fpics{
+    width: 20%;
+    height: 100%;
+    margin: 5px;
+    position: relative;
+}
+.label{
+    position: absolute;
+    top: 70%;
+    right: 40%;
+}
+.fimages{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.fimages:hover{
+    background-color: black;
+    opacity: .5;
+}
+#main4{
+    margin-top: 1%;
+}
+#bigpics{
+    display: flex;
+    width: 95%;
+    margin: auto auto;
+    height: 90vh;
+}
+.big{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+.bigimage{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.bigimage:hover{
+    opacity: .7;
+}
+#footer{
+    width: 100%;
+    background-color: rgb(224, 237, 248);
+}
+#foot{
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+.f{
+    margin: 30px;
+}
+#flogo{
+    height: 100px;
+}
+.f h1{
+    margin-bottom: 40px;
+}
+.f ul{
+    list-style: none;
+}
+.f ul li{
+    padding-top: 10px;
+}
+
+#about{
+    width: 50%;
+    height: 60vh;
+    margin: auto auto;
+    margin-top: 70px;
+}
+#about h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+}
+#about p{
+    font-size: large;
+    text-align: center;
+}
+#go-home{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#go-home a{
+    text-decoration: none;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+#go-home a:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    transition: 1s;
+}
+
+
+@media only screen and (max-width: 560px) {
+    #nav-bar{
+        display: flex;
+        padding: 10px 10px;
+        justify-content:space-between;
+    }
+    #nav-list{
+        display: none;
+    }
+    #logo{
+        width: 35px;
+        justify-self: center;
+    }
+    #nav-search{
+        display: none;
+    }
+    #nav-right{
+        font-size: small;
+    }
+    #nav-btns{
+        margin: 0;
+    }
+    #nav-btn{
+        margin: 0;
+        font-size: medium;
+    }
+    #nav-show-btn{
+        display: block;
+        border: none;
+        background: transparent;
+    }
+    #scnd{
+        display: none;
+    }
+    #pics2{
+        display: block;
+    }
+    #pics2 div{
+        width: 100%;
+        padding: 4px;
+        height: 40vh;
+    }
+    #pics2 div img{
+        width: 100%;
+        height: 40vh;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    #pics2 div img:focus{
+        transform: scale(1.03);
+    }
+    #fcontainer{
+        display: none;
+    }
+    #fslide{
+        display: block;
+    }
+    .big{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    #bigpics{
+        display: flex;
+        width: 95%;
+        margin: auto auto;
+        height: auto;
+        flex-flow: column;
+    }
+    #foot{
+        width: 80%;
+        margin: auto auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+    .f{
+        margin: 10px;
+    }
+    #flogo{
+        height: 100px;
+    }
+    .f h1{
+        margin-bottom: 40px;
+    }
+    .f ul{
+        list-style: none;
+    }
+    .f ul li{
+        padding-top: 10px;
+    }
+}
