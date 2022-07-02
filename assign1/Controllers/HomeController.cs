@@ -11,7 +11,21 @@ namespace assign1.Controllers
 
         public IActionResult about()
         {
+            ViewBag.message = "LOGIN";
             return View();
+        }
+
+        public IActionResult formsend(string name, string lname, string email, double phone, string gender, string department, string mess)
+        {
+            if(name != "" && lname != "" && email != "" && phone != null && gender != "" && department != "" && mess !="")
+            {
+                ViewBag.message = "Received data";
+            }
+            else
+            {
+                ViewBag.message = "Fail data received";
+            }
+            return View("about");
         }
     }
 }

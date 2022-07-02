@@ -11,7 +11,23 @@
             Abdullah <br>
             Team King's Man
             </p>
-
+            <section>
+        <form action="formsend" method="get">
+            <input type="text" name="firstname" placeholder="Name" id="fname"><br>
+            <input type="text" name="lastname" placeholder="Last name" id="lname"><br>
+            <input type="email" name="email" placeholder="Email" id="email"><br>
+            <input type="number" name="phoneno" placeholder="Phone no" id=""><br>
+            <label for="gender">Gender: </label>Male<input type="radio" name="gender" value="male" id="">
+            Female<input type="radio" name="gender" value="female" id=""><br>
+            <select name="dropdown" id="">
+                <option value="Sales">Sales</option>
+                <option value="IT">IT</option>
+            </select><br>
+            <textarea name="message" id="" cols="30" rows="10"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p style="color:red">@ViewBag.message</p>
+         </section>
             <div id="go-home"><a href="index.html">Home</a></div>
         </div>
 </section>
