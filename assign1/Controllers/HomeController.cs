@@ -1,12 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using assign1.Data;
+using assign1.Models;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace assign1.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DataContext _context;
+        private DataContext _dataContext;
+
         public IActionResult Index()
         {
             return View();
+        }
+
+        public HomeController(DataContext context)
+        {
+            _context = context;
+            _dataContext = context;
         }
 
         public IActionResult about()
@@ -15,17 +27,24 @@ namespace assign1.Controllers
             return View();
         }
 
-        public IActionResult formsend(string name, string lname, string email, double phone, string gender, string department, string mess)
+        [HttpPost]
+        public IActionResult formsend(information_customer s)
         {
-            if(name != "" && lname != "" && email != "" && phone != null && gender != "" && department != "" && mess !="")
-            {
-                ViewBag.message = "Received data";
-            }
-            else
-            {
-                ViewBag.message = "Fail data received";
-            }
-            return View("about");
+            _dataContext.information_customer.Add(s);
+            _dataContext.SaveChanges();
+            return View("contact");
         }
+
+        public IActionResult contact()
+        {
+            return View();
+        }
+
+        public IActionResult table()
+        {
+            return View(_context.information_customer.ToList());
+        }
+
+
     }
 }

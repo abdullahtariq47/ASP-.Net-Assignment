@@ -1,0 +1,33 @@
+﻿#form {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frm-in {
+    font-size: large;
+    padding: 8px;
+    margin: 8px;
+}
+
+#frm-btn {
+    padding: 10px;
+    background-color: transparent;
+    font-size: large;
+    position: absolute;
+    left: 46%;
+}
+
+#sm-txt {
+    font-size: medium;
+}
+
+#frm-btn:hover {
+    background-color: rgb(145, 189, 225);
+    transition: 1s;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+}

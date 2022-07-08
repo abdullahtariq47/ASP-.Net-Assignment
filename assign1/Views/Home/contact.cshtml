@@ -1,0 +1,25 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/contact.css">
+</head>
+
+    <section>
+        <div id="form">
+            <form asp-action="formsend" asp-controller="Home" method="post">
+                <h1>Contact Form</h1>
+                <input class="frm-in" type="text" name="name" placeholder="Name" id="fname"><br>
+                <input class="frm-in" type="text" name="lastname" placeholder="Last name" id="lname"><br>
+                <input class="frm-in" type="text" name="age" placeholder="age" id="age"><br>
+                <input class="frm-in" type="email" name="email" placeholder="Email" id="email"><br>
+                <input class="frm-in" type="number" name="phoneno" placeholder="Phone no" id=""><br>
+                <label for="gender">Gender: </label>Male<input type="radio" name="gender" value="male" id="">
+                Female<input type="radio" name="gender" value="female" id=""><br>
+                <select class="frm-in" name="dep" id="">
+                    <option value="Sales">Sales</option>
+                    <option value="IT">IT</option>
+                </select><br>
+                <textarea class="frm-in" name="message" id="" cols="30" rows="6"></textarea><br>
+                <button id="frm-btn" type="submit">Submit</button>
+            </form>
+            @Html.ActionLink("Results" , "table",new {@class = "nav-link"});
+        </div>
+    </section>

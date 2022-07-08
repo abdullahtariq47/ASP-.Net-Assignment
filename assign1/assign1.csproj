@@ -7,9 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\style.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="wwwroot\images\boy1.jpg" />
     <None Include="wwwroot\images\girl1.jpg" />
     <None Include="wwwroot\images\icons\mag.svg" />
@@ -25,6 +22,14 @@
     <None Include="wwwroot\images\s4.jpg" />
     <None Include="wwwroot\images\s5.jpg" />
     <None Include="wwwroot\images\s6.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
