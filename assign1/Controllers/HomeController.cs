@@ -35,6 +35,7 @@ namespace assign1.Controllers
             return View("contact");
         }
 
+
         public IActionResult contact()
         {
             return View();
